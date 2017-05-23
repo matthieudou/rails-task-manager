@@ -1,0 +1,11 @@
+<div class="well">
+  <%= form_for @task do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, class: "form-control" %>
+
+  <%= f.label :details %>
+  <%= f.text_area :details, class: "form-control" %>
+  <br>
+  <%= f.submit 'Add a task', class: "btn btn-default" %>
+  <% end %>
+</div>
